@@ -21,7 +21,8 @@ Values('Wanda Maximoff','wanda.maximoff@avengers.org'),
 ('Nebula','idonthaveelektras@complex.thanos'),
 ('Gamora','thefiercestwomaninthegalaxy@thanos.'),
 ('Rocket','shhhhhhhh@darknet.ru')
-
+ /*Tome que los special characters si pueden ir en el recipient name y en el domain name pueden ir guiones y guiones bajos aunque no es muy amigable
+  *  */
 select *
 from superheroes s 
 where email !~'^.+\@.+\..+$'
