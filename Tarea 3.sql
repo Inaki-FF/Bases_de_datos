@@ -14,9 +14,9 @@ limit 1;
 
 
 
---por tienda MALDITO DISTINCT ON no me acobarda de la sintaxis XD (odio overthinkear)--
+--por tienda MALDITO DISTINCT ON no me acordaba de la sintaxis XD (odio overthinkear)--
 select distinct on(s.store_id) s.store_id,f.title,count(*) numero_rentas
-from customer c join store s using(store_id)  join rental r using (customer_id) join inventory i using(inventory_id) join film f using(film_id)
+from customer c join store s using(store_id) join rental r using (customer_id) join inventory i using(inventory_id) join film f using(film_id)
 group by s.store_id,f.title
 order by 1,3 desc;
 
