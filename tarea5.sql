@@ -1,4 +1,4 @@
-ith movies_per_store as (select store_id, count(i.film_id) as "num pels" from inventory i group by store_id),
+with movies_per_store as (select store_id, count(i.film_id) as "num pels" from inventory i group by store_id),
 
 
 	nummax as (select 50/.5 as "pels por cilindro"),
